@@ -1,0 +1,128 @@
+header {
+    background: #445161;
+}
+
+.head__header {
+    color: #ffffff;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 69px;
+    padding-left: 50px;
+    padding-bottom: 40px;
+    padding-top: 25px;
+}
+
+.head__info {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 19px;
+}
+
+.text {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+
+.header__img {
+    position: absolute;
+    width: 500px;
+    height: 217px;
+    left: 750px;
+    top: 25px;
+    background: #FFFFFF;
+}
+
+.about__header {
+    padding-top: 45px;
+    padding-bottom: 17px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    /* identical to box height, or 120% */
+    display: flex;
+    align-items: center;
+    color: #445161;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 81px;
+    padding-left: 50px;
+}
+
+.about__info {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    align-items: center;
+    color: #333333;
+    max-width: 646px;
+    padding-bottom: 11px;
+}
+
+.about__img {
+    margin-top: 45px;
+    position: absolute;
+    width: 430px;
+    height: 245px;
+    background: #445161;
+    margin-left: 750px;
+}
+
+.pluses {
+    background: #F5F5F5;
+}
+
+.pluses__header {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: #445161;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 29px;
+}
+
+.pluses__info {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+    padding-bottom: 32px;
+    /*max-width: 600px;*/
+}
+
+.plinfo {
+    padding-left: 50px;
+    align-self: center;
+}
+
+.pl {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
