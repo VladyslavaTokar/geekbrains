@@ -193,41 +193,278 @@ header {
     color: #445161;
 }
 
-.review__info {
-    background-color: #EBEBEB;
-    border-radius: 5px;
+.review__text {
+    border-radius: 10px;
     width: 45%;
-    padding-bottom: ;
-}
-
-.review__info:nth-of-type(-n+2) {
-    margin-bottom: 25px;
-}
-
-.review__info::before {
-    content: '';
-    height: 66px;
-    width: 66px;
-    background-color: #445161;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 15px;
-}
-
-.review__info {
-    font-size: 14px;
-    line-height: 18px;
-    color: #000000;
+    margin-bottom: 20px;
     position: relative;
 }
 
-.review__info::after {
-    content: 'Lourens S.';
+.review__info {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 5px;
+    background-color: #EBEBEB;
+}
+
+
+/* .review__info:nth-of-type(-n+2) {
+        margin-bottom: 25px;
+    } */
+
+.review__text::before {
+    content: '';
+    height: 66px;
+    width: 66px;
+    border-radius: 50%;
+    display: inline-block;
     position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -17px;
+    background-size: cover;
+    background: #445161;
+    left: -75px;
+}
+
+
+/* .review__info::before {
+    content: url('../geekbrains/images/треугодьник.svg');
+    width: 30px;
+    height: 25px;
+    background-color: #fff;
+} */
+
+.author {
     color: #989898;
     font-size: 14px;
     line-height: 18px;
+    /* padding-left: 70px; */
+    background-color: #EBEBEB;
+    /* background-color: #EBEBEB; */
+    padding-left: 15px;
+}
+
+.buy {
+    padding: 45px 0 50px;
+}
+
+.buy__title {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #445161;
+    padding-bottom: 25px;
+}
+
+.buy__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.standart {
+    background: #445161;
+    border-radius: 5px;
+    width: 300px;
+    /* height: 306px; */
+    margin-right: 45px;
+}
+
+.buy__header {
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px 100px;
+}
+
+.buy__price {
+    background: #FFFFFF;
+    border: 2px solid #445162;
+    box-sizing: border-box;
+    font-size: 40px;
+    line-height: 30px;
+    color: #445162;
+    width: 300px;
+    height: 71px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.buy__list {
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.buy__button {
+    width: 100%;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #445161;
+    width: 262px;
+    height: 43px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.premium {
+    width: 300px;
+    /* height: 404px; */
+    background: #445161;
+    border-radius: 5px;
+    margin-right: 45px;
+}
+
+.lux {
+    width: 300px;
+    /* height: 499px; */
+    background: #445161;
+    border-radius: 5px;
+}
+
+.contacts {
+    background-color: #445162;
+    padding: 25px 0 48px;
+}
+
+.contacts__wrapper {
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.contacts__form {
+    margin-left: 190px;
+    margin-right: 20px;
+}
+
+.contacts__header {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 40px;
+}
+
+input {
+    display: block;
+    width: 503px;
+    height: 43px;
+    border-radius: 8px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: 16px;
+    line-height: 24px;
+    color: #445162;
+    padding-left: 12px;
+}
+
+textarea::placeholder {
+    font-weight: normal;
+    font-style: normal;
+    font-family: sans-serif;
+}
+
+input[type="submit"] {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #445162;
+    width: 143px;
+    height: 43px;
+    margin: 0 auto 10px auto;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 503px;
+    height: 173px;
+    border-radius: 8px;
+}
+
+
+/* .contacts__info {
+    padding-left: 45px;
+} */
+
+.contacts__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    position: relative;
+    padding-left: 45px;
+}
+
+.contacts__text:not(:last-of-type) {
+    padding-bottom: 20px;
+}
+
+.skype::before {
+    content: url('../geekbrains/images/skype\ icon.svg');
+    padding-right: 5px;
+    position: absolute;
+    top: 3px;
+    left: 20px;
+}
+
+.phone__number::before {
+    content: url('../geekbrains/images/icq\ icon.svg');
+    padding-right: 5px;
+    position: absolute;
+    top: 3px;
+    left: 20px;
+}
+
+.email::before {
+    content: url('../geekbrains/images/email\ icon.svg');
+    padding-right: 5px;
+    position: absolute;
+    top: 3px;
+    left: 20px;
+}
+
+.number::before {
+    content: url('../geekbrains/images/phone.svg');
+    padding-right: 5px;
+    position: absolute;
+    top: 3px;
+    left: 20px;
+}
+
+.contacts__social {
+    padding-top: 45px;
+    padding-left: 5px;
+}
+
+.copyright {
+    background: #F5F5F5;
+    text-align: center;
+    padding: 10px 0 10px;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    color: #445162;
 }
